@@ -1,0 +1,19 @@
+@import "./mixin/mixin.scss";
+.mainContainer{
+  background:url("./assets/bg1.jpg") center/cover no-repeat;
+  min-height: 100vh;
+  @include display-details(flex, column, center,center);
+  background-size: 100% 100%;
+  font-family: 'Press Start 2P', cursive;
+  padding: 2rem;
+  width: 100%;
+  overflow-x: hidden;
+  .title{
+    @include font-padding(2rem, 1rem);
+    margin-bottom: 1rem;
+  }
+  .copyright{
+    font-size: 1rem;
+    margin-top: 3.5rem;
+  }
+}

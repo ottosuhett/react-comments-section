@@ -1,0 +1,29 @@
+@import "../../mixin/mixin.scss";
+.form{
+    @include display-details(flex, column, center, center);
+    gap: 1rem;
+    padding: 2rem;
+    .title{
+        @include font-padding(5rem, 2rem);
+        text-align: center;
+        @media(max-width:425px){
+            font-size:2rem;
+        }
+    }
+    .labelText,.formInput{
+        @include font-padding(2rem, 1rem);
+        text-align: center;
+        width: 80%;
+    }
+    .formInput{
+        color: #42275a;
+        @media(max-width:340px) {
+            font-size: 1.5rem;
+        }
+    }
+    .btn{
+        @include font-padding(2rem, 1rem 3rem);
+        background: linear-gradient(to right,(#42275a,#734b6d));
+        border-radius: 10%;
+    }
+}
